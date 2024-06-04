@@ -21,6 +21,8 @@ const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-
 modal.init();
 const tooltip = new Tooltip('[data-tooltip]')
 tooltip.init();
+fetchAnimais('../../animaisapi.json', '.numeros-grid');
+fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 
 
 
@@ -28,7 +30,5 @@ tooltip.init();
 initDropdownMenu();
 initMenuMobile();
 initFuncionamento();
-fetchAnimais('../../animaisapi.json', '.numeros-grid');
-fetchBitcoin('https://blockchain.info/ticker', '.btc-preco');
 initAnimacaoScroll();
 
